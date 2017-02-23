@@ -21,7 +21,7 @@ export class CampaingSummaryBySkill {
     <h1>{{title}}</h1>
     <h2>Campaing Summary By Skill</h2>
     <div>
-    <button (click)="loadReport()">Get Report</button>
+    <button (click)="loadReport()">Get Bi Report</button>
     <table>
         <thead>
             <th align="left">Skill Id</th>
