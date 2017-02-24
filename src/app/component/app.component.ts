@@ -21,7 +21,7 @@ export class CampaingSummaryBySkill {
     <h1>{{title}}</h1>
     <h2>Campaing Summary By Skill</h2>
     <div>
-    <button (click)="loadReport()">Get Business Intelligence Report 2</button>
+    <button (click)="loadReport()">Demo Git Button</button>
     <table>
         <thead>
             <th align="left">Skill Id</th>
@@ -54,7 +54,8 @@ export class AppComponent  {
 
   // Metodo el cual llama al Servicio
   loadReport() {
-    this.campaingSummaryBySkillService.getCampaingSummaryBySkillList("all", "none", "other none")
+
+    this.campaingSummaryBySkillService.getCampaingSummaryBySkillList()
                                       .subscribe(
                                           campaingSummaryBySkill => this.campaingSummaryBySkill = campaingSummaryBySkill,
                                           err => {console.log(err);}
