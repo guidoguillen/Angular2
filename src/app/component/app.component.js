@@ -32,7 +32,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <h1>{{title}}</h1>\n    <h2>Campaing Summary By Skill</h2>\n    <div>\n    <button (click)=\"loadReport()\">Get Bi Report</button>\n    <table>\n        <thead>\n            <th align=\"left\">Skill Id</th>\n            <th align=\"left\">Name</th>\n            <th align=\"left\">Duration</th>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let row of campaingSummaryBySkill\">\n                <td>{{row.skillID}}</td>\n                <td>{{row.skillName}}</td>\n                <td align=\"right\">{{row.duration}}</td>\n            </tr>\n        </tbody>\n    </table>    \n    </div>\n  ",
+            template: "\n    <h1>{{title}}</h1>\n    <h2>Campaing Summary By Skill</h2>\n    <div>\n    <button (click)=\"loadReport()\">Get Business Intelligence Report 2</button>\n    <table>\n        <thead>\n            <th align=\"left\">Skill Id</th>\n            <th align=\"left\">Name</th>\n            <th align=\"left\">Duration</th>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let row of campaingSummaryBySkill\">\n                <td>{{row.skillID}}</td>\n                <td>{{row.skillName}}</td>\n                <td align=\"right\">{{row.duration}}</td>\n            </tr>\n        </tbody>\n    </table>    \n    </div>\n  ",
             // incluir el provaider que hara la llamada
             providers: [campaingSummaryBySkill_service_1.CampaingSummaryBySkillService]
         }), 

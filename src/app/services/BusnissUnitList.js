@@ -14,26 +14,26 @@ var http_1 = require('@angular/http');
 var Observable_1 = require('rxjs/Observable');
 require('rxjs/add/operator/map');
 require('rxjs/add/operator/catch');
-var AgentListService = (function () {
-    function AgentListService(http) {
+var CampaingSummaryBySkillService = (function () {
+    function CampaingSummaryBySkillService(http) {
         this.http = http;
     }
-    AgentListService.prototype.createAuthorizationHeader = function (headers) {
+    CampaingSummaryBySkillService.prototype.createAuthorizationHeader = function (headers) {
         headers.append('Authorization', 'Basic ' +
             btoa('e8ba5982-8e0f-4040-88f5-5015443f3606:96a002d3-e97f-4951-9d36-6380d57efe22'));
     };
-    AgentListService.prototype.getAgentList = function () {
+    CampaingSummaryBySkillService.prototype.getCampaingSummaryBySkillList = function () {
         var headers = new http_1.Headers();
         this.createAuthorizationHeader(headers);
         return this.http.get('https://legacyreports.apispark.net:443/v1/campaingSummaryBySkills/', { headers: headers })
             .map(function (res) { return res.json(); })
             .catch(function (error) { return Observable_1.Observable.throw(error.json().error || 'Server error'); });
     };
-    AgentListService = __decorate([
+    CampaingSummaryBySkillService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])
-    ], AgentListService);
-    return AgentListService;
+    ], CampaingSummaryBySkillService);
+    return CampaingSummaryBySkillService;
 }());
-exports.AgentListService = AgentListService;
-//# sourceMappingURL=AgentList.service.js.map
+exports.CampaingSummaryBySkillService = CampaingSummaryBySkillService;
+//# sourceMappingURL=BusnissUnitList.js.map

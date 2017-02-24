@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 @Injectable()
-export class AgentListService  {
+export class CampaingSummaryBySkillService  {
     
   //public _http: Http;
   private headers: Headers;
@@ -21,7 +21,7 @@ export class AgentListService  {
       btoa('e8ba5982-8e0f-4040-88f5-5015443f3606:96a002d3-e97f-4951-9d36-6380d57efe22')); 
    }
  
-    getAgentList() : Observable<CampaingSummaryBySkill[]> {
+    getCampaingSummaryBySkillList() : Observable<CampaingSummaryBySkill[]> {
         let headers = new Headers();
         this.createAuthorizationHeader(headers);
         return this.http.get('https://legacyreports.apispark.net:443/v1/campaingSummaryBySkills/', {headers: headers})
