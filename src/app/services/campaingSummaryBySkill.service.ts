@@ -21,7 +21,7 @@ export class CampaingSummaryBySkillService  {
       btoa('e8ba5982-8e0f-4040-88f5-5015443f3606:96a002d3-e97f-4951-9d36-6380d57efe22')); 
    }
  
-    getCampaingSummaryBySkillList(all: string) : Observable<CampaingSummaryBySkill[]> {
+    getCampaingSummaryBySkillList(all: string, param1: string) : Observable<CampaingSummaryBySkill[]> {
         let headers = new Headers();
         let color: string = "Hola Mundo";
         this.createAuthorizationHeader(headers);
