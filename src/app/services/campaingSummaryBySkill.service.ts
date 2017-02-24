@@ -22,6 +22,7 @@ export class CampaingSummaryBySkillService  {
    }
  
     getCampaingSummaryBySkillList(all: string,parameter1:string,parameter2:number,parameter3:string) : Observable<CampaingSummaryBySkill[]> {
+
         let headers = new Headers();
         let color: string = "Hola Mundo tester";
         this.createAuthorizationHeader(headers);
