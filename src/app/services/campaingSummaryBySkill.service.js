@@ -22,9 +22,9 @@ var CampaingSummaryBySkillService = (function () {
         headers.append('Authorization', 'Basic ' +
             btoa('e8ba5982-8e0f-4040-88f5-5015443f3606:96a002d3-e97f-4951-9d36-6380d57efe22'));
     };
-    CampaingSummaryBySkillService.prototype.getCampaingSummaryBySkillList = function (all) {
+    CampaingSummaryBySkillService.prototype.getCampaingSummaryBySkillList = function (all, parameter1, parameter2, parameter3) {
         var headers = new http_1.Headers();
-        var color = "Hola Mundo";
+        var color = "Hola Mundo tester";
         this.createAuthorizationHeader(headers);
         return this.http.get('https://legacyreports.apispark.net:443/v1/campaingSummaryBySkills/', { headers: headers })
             .map(function (res) { return res.json(); })
