@@ -26,7 +26,7 @@ var AppComponent = (function () {
     // Metodo el cual llama al Servicio
     AppComponent.prototype.loadReport = function () {
         var _this = this;
-        this.campaingSummaryBySkillService.getCampaingSummaryBySkillList()
+        this.campaingSummaryBySkillService.getCampaingSummaryBySkillList("all")
             .subscribe(function (campaingSummaryBySkill) { return _this.campaingSummaryBySkill = campaingSummaryBySkill; }, function (err) { console.log(err); });
     };
     AppComponent = __decorate([
