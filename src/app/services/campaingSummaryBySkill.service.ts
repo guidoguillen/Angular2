@@ -21,7 +21,7 @@ export class CampaingSummaryBySkillService  {
       btoa('e8ba5982-8e0f-4040-88f5-5015443f3606:96a002d3-e97f-4951-9d36-6380d57efe22')); 
    }
  
-    getCampaingSummaryBySkillList() : Observable<CampaingSummaryBySkill[]> {
+    getCampaingSummaryBySkillList(param1:string) : Observable<CampaingSummaryBySkill[]> {
         let headers = new Headers();
         this.createAuthorizationHeader(headers);
         return this.http.get('https://legacyreports.apispark.net:443/v1/campaingSummaryBySkills/', {headers: headers})

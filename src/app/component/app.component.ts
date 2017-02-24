@@ -54,7 +54,7 @@ export class AppComponent  {
 
   // Metodo el cual llama al Servicio
   loadReport() {
-    this.campaingSummaryBySkillService.getCampaingSummaryBySkillList()
+    this.campaingSummaryBySkillService.getCampaingSummaryBySkillList("test")
                                       .subscribe(
                                           campaingSummaryBySkill => this.campaingSummaryBySkill = campaingSummaryBySkill,
                                           err => {console.log(err);}
